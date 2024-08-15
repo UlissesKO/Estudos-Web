@@ -1,0 +1,236 @@
+id 
+    é uma identificação de um elemento HTML e pode ser aplicado
+    a apenas um elemento
+class
+    igual a id porém pode ser aplciado a vários elementos
+
+Seletor adjascente é o seguinte:
+    quero que o primeiro <p> depois de um <h1> seja formatado de
+    uma forma, irei fazer assim:
+        h2+p { coisas que quero }
+
+quando declarar uma id, se coloca o # antes do nome
+ao declarar uma classe, se coloca o . antes
+
+se coloca rel="stylesheet" ao fazer um link entre arquivo HTML
+e css.
+    rel quer dizer relacionamento entre arquivo 
+    stylesheet quer dizer que aquele arquivo é um arquivo
+    de estilo
+o css possui o metodo cascata, ou seja, ele vai ler as 
+definições do estilo e vai substituindo conforme vai descendo as 
+linhas
+    exemplo
+        <link pra uma pagina de estilo que deixa o background preto>
+        <style>
+            deixa a fonte branca
+        </style>
+        <p style="deixa o background desta parte azul"></p>
+    o background do p vai ficar azul ao inves de preto
+
+existem duas formas de alterar o tamanho de uma fonte  
+    por unidade absoluta
+        São unidades fixas que sao exibidas do tamanho solicitado independente do tamanho do documento  
+            para este se usa a medida px
+    por unidade relativa 
+        depende do tamanho do documento
+            para este se usa a medida "em" onde 1em é a medida normal do navegador ou pode ser percentual
+            onde 100% é a medida normal
+é possivel alterar os pesos da fonte com font-weight: 
+    vai depender da disponibilidade da fonte, por exemplo se uma fonte especifica possui esta funçao
+se altera o estilo da fonte com font-style:
+line-height: é o espaçamento entre as linhas. Sua unidade de medida é a das fontes
+line-indent: é o tamanho do paragrafo
+text-decoration define como vai ficar o sublinhado do texto ou se nao vai ter sublinhado
+    pode ser com underline
+    overline
+    line-through
+        esta vai ficar no meio da palavra
+text-transform: vai deixar tudo em uma determinada case, uppercase ou lowercase ou capitalize
+letter-spacing: é o espaçamento entre letras
+word-spacing: é o espaçamento entre palavras
+
+para escolher cores pode ser tanto rgb ,hsl, ou rgba e hsla
+    o "a" representa a opacidade da cor
+
+todo elemento do html é considerado uma Box em css
+    padding é o espaço entre o conteudo e a caixa desta Box
+    margin é a distancia externa dessa caixa, ela afasta ou aproxima os outros objetos
+
+entre as propriedades de posicionamento tem
+    absolute
+    relative
+    fixed
+    static
+tem a flutuação
+    float
+        left
+        right
+        none
+        inherit
+            esta herdando uma caracterisca de um elemento pai
+
+um jeito de colocar as especificações das margins é do seguinte
+    margin: 30px 30px 30px 30px
+        onde o primeiro é top, segundo é right, terceiro é bottom e quarto é left
+    caso coloque apenas 2 valores   margin: 30px 40px
+        o primeiro é top e bottom e o segundo é right e left
+    caso coloque 3 valores      margin: 30px 40px 50px
+        primeiro é top terceiro é bottom e segundo é right e left
+para o padding é o mesmo esquema do margin
+
+border-style podem ser 
+    sólidas
+        linha reta solicitado  
+    dashed
+        linha tracejada
+    dotted
+        linha pontilhada
+    inset
+    ridge
+    outset
+border-width pode ser
+    thin
+    medium
+    trick
+    além de numerais
+
+as bordas podem ser por area como
+    top 
+    bottom
+    left 
+    right 
+isso serve para definir qualquer coisa sobre a borda individualmente
+pode utilizar uma imagem como borda da seguinte forma
+    border-image:url(caminho da imagem) 30 30 round
+
+as propriedades de background sao
+    -color 
+    -image
+        a imagem vai repetir durante todo o conteudo da pagina
+    -repeat 
+        vai escolher se vai repetir ou nao  
+            no-repeat
+            repeat-x
+                para repetir apenas no eixo x
+            repeat-y
+                para repetir apenas no eixo y
+    -attachment
+        escolhe se vai ficar ou nao presa na tela
+        como propaganda de site nao confiavel, onde independemente do quanto
+        role pra baixo ela vai continuar ali
+    -position 
+        vai escolher onde vai ficar a imagem
+            é possivel fazer combinações como   
+                right center
+                left top
+                right bottom
+                etc
+    -blend-mode
+    -origin
+    -clip
+
+para colocar shadow é divido em dois metodos
+    box-shadow para coisa como div, etc
+        box-shadow: 10px 10px 5px 10px #999
+            primeiro valor é sombra lateral
+                positivo =  direita
+                negativo = esquerda
+            segundo valor é vertical
+                positivo = baixo
+                negativo = cima
+            terceiro é blur da sombra
+                quanto maior mais blur vai ter
+                quanto menor mais solida vai ser
+            quarto é o spread da sombra
+        é possivel colocar o inset. ele meio que coloca a sombra de dentro para fora
+    text-shadow para textos
+        é o mesmo esquema da box
+
+background: linear-gradient(to "direçao", cor1, cor2)
+    vai fazer um gradiente linear para a direçao escolhida com as cores
+    escolhidas
+        nao nescessariamente precisa ser direçao, pode ser apenas
+            (90deg, blue, red)
+    para o gradiente radial basta trocar linear por radial
+        nao vai especificar a direçao
+        pode ter quantas cores bem entender
+        e possivel escolher o foco assim
+            background:radial-gradient(blue 30%, red 70%)
+
+para deixar algo centralizado determina uma largura do elemento
+depois coloca margin 0 auto
+
+quando se utiliza o float= independente da direçao
+o elemento vai parar de ocupar espaço dentro da página
+
+        #principal:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+a medida em vai servir como porcentagem do tamanho da fonte do body
+    em é equivalente a % para fontes
+
+% para elementos é quando se quer que o tamanho do elemento fique fluido
+
+para fechar a conta da porcentagem do body precisa considerar tanto a margin
+quanto o padding
+
+para aparecer o background de uma div precisa dar as especificações de heigh pelo
+menos
+
+o clear serve para identificar que nao pode haver nenhum elemento no lado
+especificado
+    left
+    right
+    both
+
+em footer nao determina o tamanho
+
+o posicionamento relative 
+    sobrepoe os que foram definidos depois dele
+o absolute
+    ignora itens com posicionamento static
+    somente obedecendo itens com posicionamento relative
+o fixed 
+    vai ficar na mesma posiçao na tela independente do quanto role para baixo
+
+
+z-index serve para facilitar a leitura do codigo
+    quanto maior o numero, mais a frente o item vai estar na leitura
+        exemplo
+            z-index: 2
+    só funciona com relative, absolute e fixed
+
+o clip serve para
+    restringir a area de visibilidade dos elementos somente a uma area especifica
+
+overflow: auto serve para criar uma barra de rolagem em uma seçao especifica
+
+para fazer layout flexivel, ele vai pegar a porcentagem do elemento pai
+para criar uma largura minima usa a funçao
+    min-width: quantidade de pixeis
+o mesmo da para fazer o a largura maxima
+    max-width: quantidade de pixeis
+
+para deixar o tamanho da imagem flexivel é assim
+    width: porcentagem, ai tira o height e esta feito
+
+o background das ul e ol vai pegar a lista como um todo, já
+o background da li vai pegar apenas os textos e deixar os marcadores de fora
+    a nao ser que especifique:
+        list-style-position: inside
+            este comando vai fazer os marcadores ficarem dentro da li
+
+com o :first-child depois de uma tag, se determina algo apenas para o primeiro elemento
+de um tipo, exemplo
+    li:first-child {
+        color: aqua
+    }
+    apenas o primeiro li do grupo vai ficar da cor aqua
+o mesmo ocorre com o :last-child, porém ao inves de ser o primeiro vai ser o ultimo
+
+o :nth-child(numero) vai ser para escolher qual elemento vai ser selecionado
+pode ser feito com odd ou even

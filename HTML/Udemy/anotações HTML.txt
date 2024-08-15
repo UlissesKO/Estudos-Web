@@ -1,0 +1,128 @@
+a ordem do que vai aparecer no site depende da 
+ordem em que foi escrito no codigo
+h1 é fonte maior que h2, h2 maior que h3, etc vai até h6
+
+charset é o conjunto de caracteres usado na página
+utf-8 é o universal
+&nbsp serve para criar mais de um espaço dentro do
+texto
+no conjunto "&" é possivel utilizar caracteres especiais
+
+na parte head da página é onde fica as informações sobre a
+página, como metadados, scripts, etc
+background no head serve para mudar a cor do fundo
+
+<p> serve para adicionar paragrafo
+<br> quebra de linha
+<ul> é lista com as bolinhas(topicos)
+<ol> é lista com os numeros
+<dl> lista com descriçao
+             - <dt>titulo da lista
+             - <dd>Descrição da lista 
+podem ser usadas diversas marcações em um mesmo texto
+se usa o type="" para alterar o tipo de caractere da 
+lista
+<i> serve para deixar em italico em palavra estrangeira,
+termo tecnico e tipografia
+<em> dar enfase ou se a palavra tem pronuncia diferente
+<strong> chamar atenção no texto, como Cuidado, atenção, etc
+<b> chamar um atenção nao muito grande
+
+<img é a tag para usar imagem
+src="" é o caminho da imagem a partir de onde esta
+o script
+width="" e heigh="" servem para mexer no tamanho da imagem
+title="" serve para adicionar a desgrição da imagem ao passar o mouse
+alt="" serve para adicionar o texto para programas de audio descrição ou
+caso a internet do usuario for lenta, vai ficar o texto enquanto a 
+imagem carrega
+
+style=""
+    margin serve para criar borda entre o item o texto, se usa com o 
+    margin.top, margin.bottom, margin.left, margin.right
+    border serve para criar borda
+    quando ta usando pra editar tag nao precisa do . no começo do nome
+a tag style <style></style> serve para criar uma classe de formataçao de 
+imagem, se utiliza qualquer coisa que precisa do style=""
+se resgata a classe utilizando class=""
+
+<a> para fazer hiperlink
+<a href = "Nome do arquivo HTML"> Texto </a>
+<a href = "link externo" target = "_blank"> Texto </a> serve para abrir
+em outra guia
+<section></section> serve para criar links para dentro da página.
+se utiliza o id="" para colocar para onde vai cada link. Não pode repetir
+<a href ="nome do id"> texto onde fica o link </a>
+
+para fazer tags no <style> pode ser qlqr nome ex:
+li {
+    list-style-type: circle
+}  
+vai alterar tudo o que estiver dentro da tag <li>,
+no caso, todas as listas da página.
+pode ser feito com imagem, como em:
+li {
+    list-style-image: url(caminho da imagem)
+} 
+é possivel colocar lista dentro da outra, como mostrado em
+Conteúdos.html 
+display: block; serve para ficar a "hitbox" do link em toda
+a linha
+padding é o tamanho do grifado que aparece no texto
+li a:hover {} é para quando passar o mouse em cima
+na tag li {} coloca display: inline-block para as informações ficarem lado a lado
+
+id=  serve para identificar um elemento, e no css atribuir um código a ele
+<div> são caixas de conteúdo generico
+<div id="principal"> pode virar <main>
+    <main> só pode ter um elemento
+    é o que junta todo o conteúdo
+tags div são do html 4, agr usa tag especifica
+<div id="topo"> vira <header>
+    <header> pode ter vários headers na pagina
+    é tipo o cabeçalho
+<div id="navegação"> vira <nav>
+    <nav> é recomendada utilizar apenas para navegação principal
+    é a navegação principal entre as páginas do site
+<div id="artigo"> vira <article>
+    <article> é toda a parte que o usuário vai ler
+<section> é utilizado para areas menores do site
+<aside> representa uma seção da página que faz parte do conteúdo, mas 
+precisa ficar separado
+    usado nas barras laterais de propaganda por exemplo
+<div ="rodapé"> vira <footer> 
+    pode ser usado para o rodapé da página
+    pode ser também para a parte de baixo de uma seção
+<small> representa um texto pequeno, como uma observação, copyright, etc
+<address> serve para descrever uma informação de contato
+    pode ser um URL de um site relevante ao conteúdo
+    um endereço de email
+    um número de telefone
+    etc
+    essa tag nao pode ser filha de outra, como h1, h2, etc
+
+tabelas serve para dados tabulados, ou dados de tabela
+quando vai fazer as bordas das tabelas, se utiliza o argumento 
+border-width e border-style em table para a borda de fora 
+para a borda de dentro usa em td
+
+para criar um formulario em HTML, todos os campos do formulario devem
+ficar dentro da tag <form>
+atributo action de um formulario serve para determinar para onde vai
+a informação
+há dois methods de criar variaveis
+    via post
+        serve para tela de inserção ou de login
+        sem limitação
+    e via get
+        quando as variaveis ficam na url do navegador, como telas de 
+        pesquisa
+        limitação de 255 caracteres em cada campo
+o nome que ficar no for="" vai ser o nome do id
+
+se usa o type="tel" para quando for escrever pelo celular, utilizar o 
+teclado numerico
+se usa type="email" para quando escrever aparecer o @
+autofocus serve para o cursor ir diretamente para o campo de escrita
+placeholder serve para ficar dentro do campo de preenchimento
+type number serve para fazer as caixas de seleção de numeros

@@ -1,0 +1,1 @@
+Esta é uma pasta obrigatoria do Flask, aqui onde vai ficar todas as páginas

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conteúdos de HTML</title>
+
+        <link href="../Site 1/style.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="#inicio"><img src="../Site/Sem título.jpg"  title="Logo" id="inicio"></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#fotos">Imagens</a></li>
+                    <li><a href="#formatar">Formatação de texto</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Links para sites externos</a></li>
+                    <li><a href="#lista">Listas</a></li>
+                    <li><a href="#tabelas">Tabelas</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>HTML 5</h2>
+                <p>&nbsp;&nbsp;&nbsp; <i>Html 5</i> é a linguagem de formatação de textos para criação de sites, ele pode ser utilizado em
+                conjunto com diversas linguagens, como o 
+                <a href="https://www.python.org/" target="_blank">Python</a> ou o <a href="https://www.javascript.com/" target="_blank">Javascript.</a><br>
+                &nbsp;&nbsp;&nbsp; Esta página esta sendo feita para treinar as coisas que aprendi em HTML através do curso da <i>Udemy</i></p>
+            </article>
+            <article>
+                <section>
+                    <h2 id="fotos">Imagens</h3>
+                    <figure>
+                        <img src="../Site/Captura de tela 2022-11-26 152648.jpeg" width="900px" title="Programação" alt="Programação">
+                        <figcaption>Imagem de google representando programação</figcaption>
+                    </figure>
+                    <figure style="margin-bottom: 30px;">
+                        <img src="../Site/Captura de tela 2022-11-26 152843.jpg" width="900px" title="Código" alt="Código">
+                        <figcaption>Imagem do código da página</figcaption>
+                    </figure>
+                </section>
+            </article>
+            <article>
+                <h2 id="formatar">Formatação de texto</h2>
+                <p>&nbsp;&nbsp;&nbsp;Em HTML é possivel mudar o estilo da fonte, como itálico, etc. este tipo de ação se faz do seguinte modo:<br><br>
+                    <aside>
+                        &nbsp;&nbsp;&nbsp;Esta função é chamada aside, e serve justamente para fazer uma parte do conteúdo da página ficar separado
+                        do resto
+                    </aside>
+                <mark>texto &lt;b&gt;<b>negrito</b>&lt;/b&gt;<br></mark>
+                <mark>texto&lt;i&gt;<i>italico</i>&lt;/i&gt;<br></mark>
+                texto&lt;u&gt;<u>sublinhado</u>&lt;/u&gt;<br>
+                texto&lt;sub&gt;<sub>subscrito</sub>&lt;/sub&gt;<br>
+                texto&lt;sup&gt;<sup>superescrito</sup>&lt;/sup&gt;<br>
+                texto&lt;s&gt;<s>riscado</s>&lt;/s&gt;
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;Há também os caracteres especiais, como os simbolos de moedas, ou simbolos que são usados também dentro do código
+                    eles pode ser vistos em:
+                </p>
+                <a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank">
+                    https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/
+                </a>
+                <h2 id="lista">Listas</h2>
+                <p>Listas podem ser feitas tanto ordenadas, quanto desordenadas, como feito no exemplo abaixo, onde foram usados
+                    os grupos formados para a Copa do Mundo de 2022.<br> 
+                    podem até ser feitas listas dentro de outras listas
+                </p>
+                <ol>
+                    <li>Grupo A</li>
+                    <ul style="list-style: disc">
+                        <li>Holanda</li>
+                        <ol>
+                            <li>Empate</li>
+                            <li>Vitória</li>
+                        </ol>
+                        <li>Equador</li>
+                        <ol>
+                            <li>Empate</li>
+                            <li>Vitória</li>
+                        </ol>
+                        <li>Senegal</li>
+                        <ol>
+                            <li>Vitoria</li>
+                            <li>Derrota</li>
+                        </ol>
+                        <li>Catar</li>
+                        <ol>
+                            <li>Derrota</li>
+                            <li>Derrota</li>
+                        </ol>
+                    </ul>
+                    <li>Grupo B</li>
+                    <ul style="list-style: square">
+                        <li>Inglaterra</li>
+                        <li>Irã</li>
+                        <li>Estados Unidos</li>
+                        <li>País de Gales</li>
+                    </ul>
+                    <li>Grupo C</li>
+                    <ul style="list-style:circle">
+                        <li>Polônia</li>
+                        <li>Argentina</li>
+                        <li>Arábia Saudita</li>
+                        <li>México</li>
+                    </ul>
+                </ol>
+                
+                <h2 id="tabelas">Tabelas</h2>
+                <table>
+                    <caption>Olimpiadas RJ 2016</caption>
+                    
+                    <colgroup>
+                        <col class="colunacinza">
+                        <col class="coluna1">
+                        <col class="coluna2">
+                        <col class="coluna3">
+                        <col class="colunacinza">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Ouro</td>
+                            <td>Prata</td>
+                            <td>Bronze</td>
+                            <td>Total</td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td>Ouro</td>
+                            <td>Prata</td>
+                            <td>Bronze</td>
+                            <td>Total</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Brasil</td>
+                            <td>100</td>
+                            <td>130</td>
+                            <td>200</td>
+                            <td>430</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>USA</td>
+                            <td>90</td>
+                            <td>110</td>
+                            <td>210</td>
+                            <td>420</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>China</td>
+                            <td>89</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>289</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </main>
+        <footer>Página feita por Ulisses<br>
+            <address>
+                <p>contate em: ulisseskelermann@gmail.com</p>    
+            </address>
+        </footer>
+    </body>
+</html>

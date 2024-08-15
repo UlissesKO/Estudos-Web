@@ -1,0 +1,30 @@
+div {
+    background-color: rgb(61, 40, 69);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid blue
+}
+p {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-family:'Courier New';
+    border: 5px dotted rgb(0, 0, 0)
+}
+
+#header {
+    border: 0px;
+    font-family:'Arial';
+    color: royalblue
+}
+
+.bwoah {
+    border: 0;
+    font-family: 'Georgia';
+    color: rgb(0, 0, 160)
+}

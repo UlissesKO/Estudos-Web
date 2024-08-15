@@ -1,0 +1,84 @@
+
+body {
+    font-family: Chivo Mono, sans-serif;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px;
+    margin: 30px 100px 30px;
+    background-image: url(/Web/HTML/Site/Sem\ título.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    box-shadow: -15px -15px 15px 10px black;
+   }
+
+h1 { 
+    font-size: 3em;
+    font-style: italic;
+    text-align: right;
+    color: rgba(0, 255, 0, 0.748);
+    margin: 50px 40px -30px 600px;
+    border: 1px dotted rgba(255, 255, 255, 1);
+    }
+
+h3 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px black;
+}
+h4 {
+    font-size: 1.2em;
+    text-decoration: overline;
+    letter-spacing: -0.1em;
+    word-spacing: -0.1em;
+    color: rgba(255, 0, 0, 0.748)
+    
+}
+
+p {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.janela1 {
+    background-color: red;
+}
+
+.janela2 {
+    background-color: blue;
+}
+
+.janela3 {
+    background-color: pink;
+}
+
+.janela4 {
+    background-color: blueviolet;
+}
+
+.janela5 {
+    background-color: chocolate;
+}
+
+.janela6 {
+    background-color: darkgoldenrod;
+}
+
+div {
+    width:350px;
+    height:300px;
+    float: left;
+}
+
+section {
+    overflow: hidden;
+}
+
+section.textomedio p:first-of-type::first-letter {
+    font-size: 4em;
+    line-height: 0.2;
+    margin: 0 5px 0 0;
+    float: left;
+}

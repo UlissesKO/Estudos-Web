@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang ="pt_BR">
+    <head>
+        <title>Conteúdos HTML</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background: rgb(255, 246, 193);
+                font-family: fantasy;
+                font-size: 15px;
+            }
+            figure {
+                float:right;
+                margin-left: 15px;
+                margin-bottom: 10px;
+                padding: 3px;
+                border: 1px solid #999;
+            }
+            figcaption {
+                font-family: Georgia;
+                font-size: 10px;
+                background-color: rgb(211, 210, 210);
+                padding: 2px;
+            }
+            .clear-left {
+                clear:left
+            }
+            .img-pizza{
+                float:right;
+                margin-left: 10px;
+                border: 5px solid rgb(229, 108, 94);
+            }
+        </style>
+    </head>
+    <body>
+        <hgroup>
+            <h1><b><u>Conteúdos HTML</u></b></h1>
+            <section id="nav_interno">
+               <a href="#marcação">Marcação </a> / <a href="#lista">Lista </a> / <a href="#usodoi">Uso do i e em </a>/ <a href="#links"> Links</a>
+            </section>
+        </hgroup>  
+        <h2>Formatação</h2>
+        <h3>Debate Politico</h3>
+        <h4>os dois debateram no bagulho la</h4>
+        <img src="pizza-mussarela.jpg" width="300" height="200"
+        class="img-pizza" >         
+        <p>&nbsp;O presidente Jair Bolsonaro encerra<br>
+            sua participação no debate da TV Globo <br> 
+            lembrando o atentando que sofreu há quatro anos.<br>
+            "Eu quero agradecer a Deus pela segunda vida em Juiz de Fora,<br>
+            não permitindo que minha filha ficasse orfã", cita. Além disso, ele recorre a bandeiras bolsonaristas, 
+            <br>como aborto, liberação das drogas e respeito à propriedade privadas.<br>
+            "Mais do que escolher um presidente da República, [eleição] é escolher o futuro da nossa nação. Não queremos a liberação das drogas, o outro lado quer, nós respeitamos a<br>
+            propriedade privada", enfatiza.</p>
+        <p>&nbsp;os dois estavam tal tal tal e tal</p>
+
+        <img src="pizza-calabresa.jpg" width="300" height="200"
+            title="Pizza de calabresa bunita"
+            alt="Pizza de calabresa bunita"
+            style="float:left;margin-right: 10px;margin-bottom: 15px;;
+            border: 1px solid rgb(0, 0, 0)">
+
+        <p>&nbsp; Pizza bunita<br>Pizza formosa<br>Pizza bem feita </p>
+
+        <h2 class="clear-left" style="color: rgb(247, 0, 251);" id="marcação"><b>Marcação</b></h2>
+        <p>texto<b> destaque </b></p>
+        <p>texto<i> italico </i></p>
+        <p>texto<u> sublinhado </u></p>
+        <p>texto<sub> subscrito </sub></p>
+        <p>texto<sup> superescrito </sup></p>
+        <p>texto<s> riscado </s></p>
+
+        <h2 id="lista"><b>Lista</b></h2>
+        <ul>
+            <li>Brasil</li>
+            <li>Argentina</li>
+            <li>Uruguai</li>
+            <li>Venezuela</li>
+        </ul>
+        <ul type="square">
+            <li>Brasil</li>
+            <li>Argentina</li>
+            <li>Uruguai</li>
+            <li>Venezuela</li>
+        </ul>
+        <ol type="A">
+            <li>Fittipaldi</li>
+            <li style="color: rgb(255, 8, 8);"><s>Piquet</s></li>
+            <li>Senna</li>
+            <li>Barrichelo</li>
+            <li>Massa</li>
+        </ol>
+        <ol type="a">
+            <li>Vettel</li>
+            <li>Schumacher</li>
+            <li>Hamilton</li>
+            <li>Manuel</li>
+        </ol>
+        <ol type="I">
+            <li>Vettel</li>
+            <li>Schumacher</li>
+            <li>Hamilton</li>
+            <li>Manuel</li>
+        </ol>
+        <figure>
+            <img src="pizza-portuguesa.jpg" width="200" height="130">
+            <figcaption>pizza portuguesa Foto: Google</figcaption>
+        </figure>
+        <dl>
+            <dt><s><b><u>Lista descritiva</u></b></s></dt>
+            <dd>Lista sobre fazer <br> listas que listam</dd>
+            <dt>Lista <sup>2</sup></dt>
+            <dd>tal tal tal, e vai indo <br> essa lista vai continuando</dd>
+        </dl>
+        <ol>
+            <li>Brasil</li>
+            <ul>
+                <li>São Paulo</li>
+                <li>Belo Horizonte</li>
+                <li>Guarulhos</li>
+            </ul>
+            <li>Argentina</li>
+            <li>Angola</li>
+        </ol> 
+        <p><a href="Listas2.html" target="_blank">Menu Vertical</a></p>
+        <p><a href="Listas3.html" target="_blank">Menu Horizontal</a></p>
+        <p><sup><sub><s><i><b><u>ola mundo!#</u></b></i></s></sub></sup></p>
+        
+        <h2 id="usodoi"><u>Uso do i e em</u></h2>
+        <p><i lang="en">English word</i> se usa a tag &quot;i&quot; <br>
+            <em>Enfase em coisa</em> se usa a tag &quot;em&quot; </p>
+        
+        <h2><i>Uso tag b e strong</i></h2>
+        <p><strong>Cuidado</strong> um buraco negro se aproxima</p>
+        <p><b>Certas</b> coisas <b>acontecem</b> Quando nao esperamos</p>
+
+        <h2 id="links">Links</h2>
+        <p><a href="html, css, js.html">Clique aqui para baixar</a></p>
+        <p><a href="https://www.youtube.com" target="_blank"><img src="pizza-portuguesa.jpg" width="90" height="50"></a></p>
+        <p><a href="Teste/teste.html" target="_blank">aperte</a></p>
+    </body>
+</html>

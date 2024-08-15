@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        html {
+            background-color: black;
+            color: aqua;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #principal {
+            width: 730px;
+            margin: 0 auto;
+            background-color: rgb(254, 0, 0);
+            padding: 5px;
+        }
+
+        #principal:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .janela {
+            float: left;
+            width: 350px;
+            padding: 5px;
+            background-color: rgb(83, 165, 0);
+            margin-right: 5px;
+        }
+        p {
+            margin: 0;
+        }
+
+        .janela1 {
+            background-color: red;
+        }
+
+        .janela2 {
+            background-color: blue;
+        }
+
+        .janela3 {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="janela">
+            <p>
+                Opa fala ai meu bom, tudo certo, famoso texto de encher linguiça,
+                nao me importo com isso, estou completamente enchendo essa página
+                de texto para esta div ficar maior
+            </p>
+        </div>
+        <div class="janela">
+            <p>
+                2Opa fala ai meu bom, tudo certo, famoso texto de encher linguiça,
+                nao me importo com isso, estou completamente enchendo essa página
+                de texto para esta div ficar maior2
+            </p>
+        </div>
+    </div>
+    <div class="janela1"></div>
+    <div class="janela2"></div>
+    <div class="janela3"></div>
+</body>
+</html>
